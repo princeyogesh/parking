@@ -5,8 +5,8 @@ import classes.const as const
 class ParkingLot:
     def __init__(self, squareFootage = 0) -> None:
         self.area   = squareFootage
-        self.length_slot = 12 #in feet
-        self.width_slot  = 8 #in feet
+        self.length_slot = const.SLOT_LENGTH #in feet
+        self.width_slot  = const.SLOT_WIDTH #in feet
         self.area_slot = self.findArea()
         self.number_of_slots = self.calculateNoofSlots()
         self.Slots = self.generateSlots()
